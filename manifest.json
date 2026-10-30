@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "girgie.token-usage",
+  "name": "Token Usage",
+  "version": "1.0.1",
+  "author": "girgie",
+  "description": "Wakapi token usage, coding activity, models, projects, and source coverage",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "TokenUsage.qml"
+  },
+  "barWidget": {
+    "displayName": "Token Usage",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "autoRefresh": true
+    },
+    "schema": [
+      {
+        "key": "autoRefresh",
+        "type": "boolean",
+        "label": "Refresh Wakapi automatically",
+        "defaultValue": true
+      }
+    ]
+  }
+}
